@@ -1,0 +1,12 @@
+
+message Event{
+	required string name = 1;
+	enum EventType
+	{
+	 COUNTER = 0;
+	 SAMPLE = 1;
+	 }
+	required EventType event_type = 2;
+	required sint32 value = 3;
+	optional float sample_rate = 4;
+}
